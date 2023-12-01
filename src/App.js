@@ -26,7 +26,7 @@ function App() {
   }
 
   return (
-   <div className="flex flex-col items-center bg-black justify-center  ">
+   <div className="flex flex-col items-center  bg-black justify-center  ">
     <ToastContainer
       position="top-center"
       autoClose={2000}
@@ -44,7 +44,7 @@ function App() {
       <h1 className="text-white font-bold text-3xl  ">Form App</h1>
       <p className="text-teal-200 opacity-80 pl-24">It will print data object in console</p>
     </div>
-   <form className="w-[800px]" onSubmit={submitHandler}>
+   <form className="w-[300px] sm:w-[500px] md:w-[800px]" onSubmit={submitHandler}>
 
     <label className="text-[#eaeae7] pl-1 text-xs  " htmlFor="firstName">First name</label>
     <br/>
@@ -284,10 +284,12 @@ function App() {
     </fieldset>
 
 
-
-   <button
+    <div className="flex justify-center mb-10  md:justify-start">
+    <button
    className="bg-blue-500 text-white font-bold rounded py-2 px-4 mt-5"
    >Save</button>
+    </div>
+   
 
 
 
